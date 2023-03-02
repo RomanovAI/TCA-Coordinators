@@ -1,0 +1,18 @@
+#cat ./.gitignore 
+# Xcode
+./Documents/*.DS_Store
+.DS_Store
+/build/
+build/
+DerivedData/
+*.pbxuser
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+/xcuserdata/
+*.moved-aside
+DerivedData
+xcuserdata/*
+*.xccheckout
+*.ipa
+*.dSYM.zip

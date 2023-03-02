@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SuiApp: App {
     var body: some Scene {
         WindowGroup {
-                AppScreen(store: .init(
-                    initialState: .initialState,
-                    reducer: AppCoordinator()
-                        ._printChanges()
-                ))
+            RootCoordinatorView(store: .init(
+                initialState: .init(isLoggedIn: false),
+                reducer: RootCoordinator()
+                    ._printChanges()
+            ))
         }
     }
 }
