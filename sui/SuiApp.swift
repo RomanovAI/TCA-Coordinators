@@ -13,7 +13,7 @@ struct SuiApp: App {
     var body: some Scene {
         WindowGroup {
             RootCoordinatorView(store: .init(
-                initialState: .init(isLoggedIn: false),
+                initialState: .init(),
                 reducer: RootCoordinator()
                     ._printChanges()
             ))
