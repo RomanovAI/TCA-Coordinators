@@ -23,7 +23,7 @@
 		7E1D997729B12F0900776738 /* WelcomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D997629B12F0900776738 /* WelcomeStore.swift */; };
 		7E1D997A29B1328500776738 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D997929B1328500776738 /* TabCoordinator.swift */; };
 		7E1D997D29B13B7200776738 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D997C29B13B7200776738 /* RootCoordinator.swift */; };
-		7E4BCFE129AF9B0E001E5068 /* suiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BCFE029AF9B0E001E5068 /* suiApp.swift */; };
+		7E4BCFE129AF9B0E001E5068 /* SuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4BCFE029AF9B0E001E5068 /* SuiApp.swift */; };
 		7E4BCFE529AF9B11001E5068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4BCFE429AF9B11001E5068 /* Assets.xcassets */; };
 		7E4BCFE829AF9B11001E5068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4BCFE729AF9B11001E5068 /* Preview Assets.xcassets */; };
 		7E4BCFF029AF9B6D001E5068 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 7E4BCFEF29AF9B6D001E5068 /* ComposableArchitecture */; };
@@ -70,8 +70,8 @@
 		7E1D997629B12F0900776738 /* WelcomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeStore.swift; sourceTree = "<group>"; };
 		7E1D997929B1328500776738 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		7E1D997C29B13B7200776738 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
-		7E4BCFDD29AF9B0E001E5068 /* sui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sui.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E4BCFE029AF9B0E001E5068 /* suiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suiApp.swift; sourceTree = "<group>"; };
+		7E4BCFDD29AF9B0E001E5068 /* Sui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4BCFE029AF9B0E001E5068 /* SuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuiApp.swift; sourceTree = "<group>"; };
 		7E4BCFE429AF9B11001E5068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E4BCFE729AF9B11001E5068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E4BCFF629AF9BD5001E5068 /* LoginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStore.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 		7E4BCFD429AF9B0E001E5068 = {
 			isa = PBXGroup;
 			children = (
-				7E4BCFDF29AF9B0E001E5068 /* sui */,
+				7E4BCFDF29AF9B0E001E5068 /* Sui */,
 				7E4BCFDE29AF9B0E001E5068 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,12 +169,12 @@
 		7E4BCFDE29AF9B0E001E5068 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E4BCFDD29AF9B0E001E5068 /* sui.app */,
+				7E4BCFDD29AF9B0E001E5068 /* Sui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7E4BCFDF29AF9B0E001E5068 /* sui */ = {
+		7E4BCFDF29AF9B0E001E5068 /* Sui */ = {
 			isa = PBXGroup;
 			children = (
 				7E17C77D29B3E0BB00F58E18 /* screenshot.png */,
@@ -182,12 +182,12 @@
 				7E4BCFFF29AFBB52001E5068 /* UIKit */,
 				7E4BD00229AFBEEF001E5068 /* Extensions */,
 				7EC0D1B129B23F5F00386D72 /* Services */,
-				7E4BCFE029AF9B0E001E5068 /* suiApp.swift */,
+				7E4BCFE029AF9B0E001E5068 /* SuiApp.swift */,
 				7E4BCFF429AF9BB6001E5068 /* Modules */,
 				7E4BCFE429AF9B11001E5068 /* Assets.xcassets */,
 				7E4BCFE629AF9B11001E5068 /* Preview Content */,
 			);
-			path = sui;
+			path = Sui;
 			sourceTree = "<group>";
 		};
 		7E4BCFE629AF9B11001E5068 /* Preview Content */ = {
@@ -340,9 +340,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E4BCFDC29AF9B0E001E5068 /* sui */ = {
+		7E4BCFDC29AF9B0E001E5068 /* Sui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4BCFEB29AF9B11001E5068 /* Build configuration list for PBXNativeTarget "sui" */;
+			buildConfigurationList = 7E4BCFEB29AF9B11001E5068 /* Build configuration list for PBXNativeTarget "Sui" */;
 			buildPhases = (
 				7E4BCFD929AF9B0E001E5068 /* Sources */,
 				7E4BCFDA29AF9B0E001E5068 /* Frameworks */,
@@ -352,13 +352,13 @@
 			);
 			dependencies = (
 			);
-			name = sui;
+			name = Sui;
 			packageProductDependencies = (
 				7E4BCFEF29AF9B6D001E5068 /* ComposableArchitecture */,
 				7E4BCFF229AF9B9B001E5068 /* TCACoordinators */,
 			);
 			productName = sui;
-			productReference = 7E4BCFDD29AF9B0E001E5068 /* sui.app */;
+			productReference = 7E4BCFDD29AF9B0E001E5068 /* Sui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -376,7 +376,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7E4BCFD829AF9B0E001E5068 /* Build configuration list for PBXProject "sui" */;
+			buildConfigurationList = 7E4BCFD829AF9B0E001E5068 /* Build configuration list for PBXProject "Sui" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -393,7 +393,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E4BCFDC29AF9B0E001E5068 /* sui */,
+				7E4BCFDC29AF9B0E001E5068 /* Sui */,
 			);
 		};
 /* End PBXProject section */
@@ -448,7 +448,7 @@
 				7EC0D1B029B23F3600386D72 /* String+PhoneFormatter.swift in Sources */,
 				7E17C77229B3BC9900F58E18 /* LoginState.swift in Sources */,
 				7E1D996E29B1291100776738 /* SignInCoordinator.swift in Sources */,
-				7E4BCFE129AF9B0E001E5068 /* suiApp.swift in Sources */,
+				7E4BCFE129AF9B0E001E5068 /* SuiApp.swift in Sources */,
 				7EC0D1C429B26D5400386D72 /* MovieSharedStore.swift in Sources */,
 				7E4BD00429AFBF1E001E5068 /* ViewModifier+DefaultPadding.swift in Sources */,
 				7E4BD02A29AFFD05001E5068 /* MovieDetailScreen.swift in Sources */,
@@ -646,7 +646,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E4BCFD829AF9B0E001E5068 /* Build configuration list for PBXProject "sui" */ = {
+		7E4BCFD829AF9B0E001E5068 /* Build configuration list for PBXProject "Sui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4BCFE929AF9B11001E5068 /* Debug */,
@@ -655,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4BCFEB29AF9B11001E5068 /* Build configuration list for PBXNativeTarget "sui" */ = {
+		7E4BCFEB29AF9B11001E5068 /* Build configuration list for PBXNativeTarget "Sui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E4BCFEC29AF9B11001E5068 /* Debug */,

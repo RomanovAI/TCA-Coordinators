@@ -56,12 +56,12 @@ struct LoginStore: ReducerProtocol {
         var effects: [EffectTask<Action>] = .init()
         
         if state.successLogin != state.loginText {
-//            state.errorText = "Incorrect login"
+            state.errorText = "Incorrect login"
         }
         
         
         if state.successPassword != state.successPassword {
-//            state.errorText += "\nIncorrect password"
+            state.errorText += "\nIncorrect password"
         }
         
         if !state.errorText.isTrimmingEmpty {
